@@ -9,16 +9,20 @@
 <!--=============Google Font ===============-->
 <link href="https://fonts.googleapis.com/css?family=Alex+Brush%7CNoto+Serif+JP&amp;display=swap" rel="stylesheet">
 <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+
 <!--機能編 6-1-3 ゆっくりズームアウトさせながら全画面で見せる-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css">
+
+<!-- ress: Modern CSS reset -->
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
 <!--自作のCSS-->
-<link rel="stylesheet" href="9/reset.css">
 <link rel="stylesheet" href="9/parts.css">
 <link rel="stylesheet" href="9/layout.css">
 </head>
 
 <body>
-    
+
 <div id="splash">
 <div id="splash-logo"><div class="fadeUp">杉山株式会社</div></div>
 <!--/splash--></div>
@@ -48,16 +52,16 @@
     </ul>
 </header>
 
-<div class="circle-bg"></div>   
+<div class="circle-bg"></div>
 
 <main id="main-area">
 
 <div id="lead">
-    
+
 <div id="slider-area">
     <div id="slider"><!--/slider--></div>
 <!--/slider-area--></div>
-    
+
 <h2 class="heading fadeRightTrigger">Concept</h2>
 <p class="lead fadeRightTrigger">最適な人材を<span>ご提案致します</span></p>
 
@@ -88,10 +92,10 @@
     </ul>
     </div>
 </section>
-    
+
 <section id="message">
     <h2 class="heading fadeLeftTrigger">Message</h2>
-    
+
     <div class="message-area">
     <div class="message-img fadeRightTrigger"></div>
     <section class="message-content fadeLeftTrigger">
@@ -103,7 +107,7 @@
     </section>
     <!--/message-area--></div>
 </section>
-    
+
 <section id="history">
     <h2 class="heading fadeRightTrigger">History</h2>
     <div class="history-area">
@@ -115,34 +119,34 @@
 				<dt>1980年</dt>
 				<dd>銀座9丁目で創業</dd>
 				</dl>
-                <span class="border-line"></span>	
+                <span class="border-line"></span>
 			</li>
 			<li>
 				<dl>
 				<dt>1990年</dt>
 				<dd>プライバシーマーク取得</dd>
 				</dl>
-                <span class="border-line"></span>	
+                <span class="border-line"></span>
 			</li>
 			<li>
 				<dl>
 				<dt>2001年</dt>
 				<dd>BEST CONNECT AWARD2001 受賞</dd>
 				</dl>
-                <span class="border-line"></span>	
+                <span class="border-line"></span>
 			</li>
 			<li>
 				<dl>
 				<dt>2016年</dt>
 				<dd>東京証券取引所マザーズに上場</dd>
 				</dl>
-                <span class="border-line"></span>	
+                <span class="border-line"></span>
 			</li>
     </ul>
         </div>
     <!--/history-area--></div>
 </section>
-</main>   
+</main>
 <div id="footer">
     <div class="footer-r">
     <section class="map-area">
@@ -164,7 +168,7 @@
         <li><a href="#">求人情報</a></li>
         <li><a href="#">お知らせ</a></li>
         <li><a href="#">アクセス</a></li>
-        <li><a href="#">お問い合わせ</a></li>   
+        <li><a href="#">お問い合わせ</a></li>
         </ul>
     <!--/footer-r--></div>
     <div class="footer-l">
@@ -183,14 +187,17 @@
 <!--/footer--></div>
 <!--/container--></div>
 
-<!--=============JS ===============--> 
-<!--jQuery-->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<!--機能編 8-1-9 スクロールの速さが変化-->     
+<!--=============JS ===============-->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--機能編 8-1-9 スクロールの速さが変化-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-<!--機能編 6-1-3 ゆっくりズームアウトさせながら全画面で見せる-->   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
-<!--自作のJS-->   
+
+<!--機能編 6-1-3 ゆっくりズームアウトさせながら全画面で見せる-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js"></script>
+
+<!--自作のJS-->
 <script src="9/script.js"></script>
 </body>
 </html>

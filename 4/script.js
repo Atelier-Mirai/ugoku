@@ -68,7 +68,7 @@ Chart.plugins.register({
                     var fontFamily = 'Arial';//フォントファミリー
                     ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
                     var dataString = dataset.data[index].toString();
-					
+
                     // 値の位置
                     ctx.textAlign = 'center';//テキストを中央寄せ
                     ctx.textBaseline = 'middle';//テキストベースラインの位置を中央揃え
@@ -76,7 +76,7 @@ Chart.plugins.register({
                     var padding = 5;//余白
                     var position = element.tooltipPosition();
                     ctx.fillText(dataString, position.x, position.y - (fontSize / 2) - padding);
-		
+
                 });
             }
         });
@@ -109,7 +109,7 @@ options:{//グラフのオプション
         label: function (tooltipItem, data) {
 			return data.labels[tooltipItem.index]+ ": "+ data.datasets[0].data[tooltipItem.index] + "%";//%を最後につける
 		}
-    },		
+    },
 	},
 	title:{//上部タイトル表示の設定
 		display: true,
@@ -118,7 +118,7 @@ options:{//グラフのオプション
 	},
 }
 });
-        
+
 }
 });
 
@@ -167,7 +167,7 @@ scales:{
 					suggestedMin: 0,//最小が0
 					stepSize: 500,//100づつ数値が刻まれる
 					callback: function(value){
-						return  value +  '人'//数字＋人で表示					
+						return  value +  '人'//数字＋人で表示
 				}
 			}
 		}
@@ -180,10 +180,10 @@ scales:{
 	}
 }
 });
-    
+
 }
-});   
-  
+});
+
 
 /*===========================================================*/
 /* 印象編 8-8 テキストがランダムに出現*/
@@ -324,8 +324,8 @@ function fadeAnime(){
 		$(this).removeClass('fadeDown');// 画面外に出たらfadeDownというクラス名を外す
 		}
 		});
-    
-    // 4-7 にゅーん（滑らかに変形して出現）	
+
+    // 4-7 にゅーん（滑らかに変形して出現）
 	$('.smoothTrigger').each(function(){ //smoothTriggerというクラス名が
 		var elemPos = $(this).offset().top-50;//要素より、50px上の
 		var scroll = $(window).scrollTop();
@@ -335,8 +335,8 @@ function fadeAnime(){
 		}else{
 		$(this).removeClass('smooth');// 画面外に出たらsmoothというクラス名を外す
 		}
-		});	
-	
+		});
+
 }
 
 /*===========================================================*/
@@ -350,7 +350,7 @@ var unit = 100,
 
 /**
  * Init function.
- * 
+ *
  * Initialize variables and begin the animation.
  */
 function init() {
@@ -387,7 +387,7 @@ function update() {
 
 /**
  * Draw animation function.
- * 
+ *
  * This function draws one frame of the animation, waits 20ms, and then calls
  * itself again.
  */
@@ -421,8 +421,8 @@ function drawWave(canvas, color, alpha, zoom, delay) {
 
 /**
  * Function to draw sine
- * 
- * The sine curve is drawn in 10px segments starting at the origin. 
+ *
+ * The sine curve is drawn in 10px segments starting at the origin.
  * drawSine(時間, 波の幅のzoom, 波の開始位置の遅れ)
  */
 function drawSine(canvas, t, zoom, delay) {
@@ -457,7 +457,7 @@ $(window).scroll(function (){
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load', function () {
-    
+
 /*===========================================================*/
 /*機能編  4-1-2 プログレスバー＋数字カウントアップ*/
 /*===========================================================*/
@@ -470,7 +470,7 @@ var bar = new ProgressBar.Line(splash_text, {//id名を指定
 	color: '#00b7b8',//進捗ゲージのカラー
 	trailWidth: 0.2,//ゲージベースの線の太さ
 	trailColor: '#ccc',//ゲージベースの線のカラー
-	text: {//テキストの形状を直接指定				
+	text: {//テキストの形状を直接指定
 		style: {//天地中央に配置
 			position: 'absolute',
 			left: '50%',
@@ -490,19 +490,18 @@ var bar = new ProgressBar.Line(splash_text, {//id名を指定
 
 //アニメーションスタート
 bar.animate(1.0, function () {//バーを描画する割合を指定します 1.0 なら100%まで描画します
-	
+
     //=====ここからローディングエリア（splashエリア）を0.8秒でフェードアウトした後に動かしたいJSをまとめる
     $("#splash").delay(500).fadeOut(800,function(){//#splashエリアをフェードアウトした後にアニメーションを実行
-    
+
 	$('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
-        
+
     fadeAnime();//印象編 4 最低限おぼえておきたい動きの関数を呼ぶ
 	RandomInit(); //印象編 8-8 テキストがランダムに出現、初期設定を読み込み
 	RandomAnimeControl();//印象編 8-8 テキストがランダムに出現、アニメーション用の関数を呼ぶ
-    }); 
+    });
     //=====ここまでローディングエリア（splashエリア）を0.8秒でフェードアウトした後に動かしたいJSをまとめる
-    
-});   
-    
+
+});
+
 });// ここまでページが読み込まれたらすぐに動かしたい場合の記述
-    

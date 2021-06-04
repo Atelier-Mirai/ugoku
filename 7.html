@@ -9,10 +9,14 @@
 <!--=============Google Font ===============-->
 <link href="https://fonts.googleapis.com/css?family=Lato:900&amp;display=swap" rel="stylesheet">
 <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+
 <!--機能編 9-4-1 ニュースティッカー-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+
+<!-- ress: Modern CSS reset -->
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
 <!--自作のCSS-->
-<link rel="stylesheet" href="7/reset.css">
 <link rel="stylesheet" href="7/parts.css">
 <link rel="stylesheet" href="7/layout.css">
 </head>
@@ -26,7 +30,7 @@
 <div id="wrapper">
 <header id="header">
 <h1><a href="#"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Happycome</span></span></a></h1>
-    
+
 <nav id="pc-nav">
         <ul>
             <li><a href="#vision"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Vision</span></span></a></li>
@@ -35,7 +39,7 @@
             <li><a href="#faq"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Faq</span></span></a></li>
             <li><a href="#contact"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Contact</span></span></a></li>
         </ul>
-</nav>   
+</nav>
 </header>
 <div id="top-main">
 <p class="top-lead"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">HAPPY</span></span><br><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Company is</span></span><br><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Making Future</span></span></p>
@@ -63,7 +67,7 @@
         <p>あなたの「わくわくすること」を<br>私たちに教えてください。</p>
         </div>
 </section>
-    
+
 <section id="service" class="scroll-point">
     <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Service</span></span></h2>
     <section class="service-area flex flex-wrap justify-between">
@@ -76,7 +80,7 @@
         </div>
     </div>
     </section>
- 
+
     <section class="service-area flex flex-wrap justify-between">
     <figure class="img flipLeftTrigger"><img src="7/pict_03.jpg" alt=""></figure>
     <div class="content flipLeftTrigger">
@@ -87,7 +91,7 @@
         </div>
     </div>
     </section>
-    
+
     <section class="service-area flex flex-wrap justify-between">
     <figure class="img flipLeftTrigger"><img src="7/pict_04.jpg" alt=""></figure>
     <div class="content flipLeftTrigger">
@@ -98,9 +102,9 @@
         </div>
     </div>
     </section>
-    
+
 </section>
-    
+
 <section id="about" class="scroll-point">
     <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">About</span></span></h2>
     <ul class="about-list fadeUpTrigger">
@@ -141,9 +145,9 @@
         </li>
     </ul>
 </section>
-    
+
 <div class="fadeUpTrigger"><div class="faq-bg"></div></div>
-    
+
 <section id="faq" class="scroll-point">
     <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">FAQ</span></span></h2>
     <ul class="accordion-area">
@@ -170,7 +174,7 @@
 							<p>お問い合わせフォームより日時や内容などをご記入いただきご相談ください。</p>
 						</div>
 					</section>
-					
+
 				</li>
 				<li class="fadeUpTrigger">
 					<section>
@@ -179,7 +183,7 @@
 							<p>ご相談内容によっては可能です。まずはお気軽にお問い合わせフォームよりご相談ください。</p>
 						</div>
 					</section>
-					
+
 				</li>
 
 			</ul>
@@ -227,10 +231,10 @@
 
         <div class="submit-btn fadeUpTrigger"><input type="submit" name="submit" value="確認"></div>
         </form>
-    
+
 </section>
 </main>
-<!--/container--></div>	
+<!--/container--></div>
 
 <footer id="footer">
 
@@ -246,21 +250,24 @@
             <li><a href="tel:03-1234-5678">TEL : 03-1234-5678</a></li>
         </ul>
 </div>
-</div> 
+</div>
     <p class="footer-logo">Happycome</p>
     <small>&copy; Happycome</small>
-	<p id="page-top"><a href="#">Top</a></p>	
+	<p id="page-top"><a href="#">Top</a></p>
 </footer>
 <!--/wrapper--></div>
-   
-<!--=============JS ===============--> 
-<!--jQuery-->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<!--機能編 9-4-1 ニュースティッカー-->   
+
+<!--=============JS ===============-->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--機能編 9-4-1 ニュースティッカー-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-<!--機能編 9-1-5 スクロールをするとエリアの高さに合わせて線が伸びる-->  
+
+<!--機能編 9-1-5 スクロールをするとエリアの高さに合わせて線が伸びる-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollgress/2.0.0/scrollgress.min.js"></script>
-<!--自作のJS-->   
+
+<!--自作のJS-->
 <script src="7/script.js"></script>
 </body>
 </html>

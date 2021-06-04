@@ -9,7 +9,7 @@ body{
 	line-height:1.85;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%; 
+	-webkit-text-size-adjust: 100%;
 	word-wrap: break-word;
 }
 
@@ -83,7 +83,7 @@ img{
 }
 
 #g-nav ul li:last-child{
-     display: none;   
+     display: none;
 }
 
 #g-nav ul li a{
@@ -96,7 +96,7 @@ img{
     display: block;
     padding: 0;
 }
-   
+
 #g-nav ul li a{
     padding:6px 15px;
 }
@@ -129,14 +129,14 @@ img{
 
 #header ul#utility-navi li img{
     width:35%;
-}  
+}
 
 #header ul#utility-navi li:first-child a{
      background:#666;
 }
 
 #header ul#utility-navi li:first-child a:hover{
-     background:#888;   
+     background:#888;
 }
 
 #header ul#utility-navi li:last-child a{
@@ -154,7 +154,7 @@ img{
     transform: translateX(-70%);
 }
 
- 
+
 #header ul#utility-navi li span{
     display:none;
 }
@@ -164,12 +164,12 @@ img{
     height: 70px;
     padding: 0;
 }
-    
+
 #header ul#utility-navi li img {
     width: 45%;
     margin: 17px 0 0 0px;
 }
-   
+
 }
 
 @media screen and (max-width:530px) {
@@ -179,13 +179,13 @@ img{
     top:14px;
     transform: translateX(-50%);
 }
-    
+
 #g-nav ul li:last-child{
-     display: block;   
+     display: block;
 }
-    
+
 #header ul#utility-navi li:first-child{
-    display: none;    
+    display: none;
 }
 
 #header ul#utility-navi li:last-child a{
@@ -193,7 +193,7 @@ img{
 }
 
 #header ul#utility-navi li:last-child a:hover{
-     background:#888;   
+     background:#888;
 }
 }
 /* lead */
@@ -202,7 +202,7 @@ img{
     position: relative;
     padding: 150px 0 0 0;
     height:100vh;
-    
+
 }
 
 #slider-area{
@@ -210,7 +210,7 @@ img{
     height: 70vh;
     position: relative;
     top: 0;
-    left:15%;    
+    left:15%;
     z-index: -1;
 }
 
@@ -239,7 +239,7 @@ img{
 }
 
 #lead .lead span{
-     display: block; 
+     display: block;
     padding: 100px 0 0 0;
 }
 
@@ -285,7 +285,7 @@ img{
 
 #news li time{
     display: inline-block;
-    padding:0 20px 0 0;  
+    padding:0 20px 0 0;
     font-size:0.8rem;
     color: #999;
 }
@@ -297,7 +297,7 @@ img{
     }
     #news{
         width:50%;
-    } 
+    }
 }
 
 @media screen and (max-width:960px) {
@@ -310,7 +310,7 @@ img{
     }
     #news li time{
         display: block;
-    }  
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -322,15 +322,15 @@ img{
     #slider-area #slider{
     height: 90vh;
 }
-    
+
 #lead h2.heading{
     top: 160px;
 }
-    
+
 #lead{
     padding:100px 0 0 0;
 }
-    
+
 #lead .lead{
     right:7%;
     top:260px;
@@ -348,14 +348,14 @@ img{
     font-size: 1.3rem;
     right:5%;
 
-} 
+}
 }
 
 @media screen and (max-width:350px) {
 #lead .lead {
     right:2%;
-} 
-    
+}
+
 }
 
 /* service */
@@ -364,7 +364,7 @@ img{
     position: relative;
     text-align: center;
     padding: 100px 0 0 0;
-    
+
 }
 
 #service header{
@@ -382,11 +382,11 @@ img{
 }
 
 #service header p{
-    margin: 0 0 30px 0;   
+    margin: 0 0 30px 0;
 }
 
 #service header p br{
-     display: none;   
+     display: none;
 }
 
 #service .service-area{
@@ -428,10 +428,10 @@ img{
     }
 #service .service-area ul li{
     width:40%;
-    }   
+    }
 
 #service header p br{
-     display:block;   
+     display:block;
 }
 }
 
@@ -454,7 +454,7 @@ img{
     left:0;
     font-size: 0.9rem;
 }
-    
+
 }
 
 /* message */
@@ -462,7 +462,7 @@ img{
 #message{
     position: relative;
     padding:0 70px;
-    
+
 }
 
 #message h2{
@@ -476,11 +476,11 @@ img{
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    
+
 }
 
 .message-img{
-    background:url("../img/pict_01.jpg") no-repeat center;
+    background:url("pict_01.jpg") no-repeat center;
     background-size: cover;
     height: 50vh;
     width:48%;
@@ -504,7 +504,7 @@ img{
 .message-content .message-btn{
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;    
+    writing-mode: vertical-rl;
     text-orientation: upright;
     height: 20em;
     letter-spacing: 0.1em;
@@ -544,7 +544,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     line-height: 3;
     margin: 0 0 0 20px;
 }
-    
+
 }
 
 @media screen and (max-width:1000px) {
@@ -558,7 +558,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 #message{
     padding: 0 30px;
 }
-    
+
 #message h2 {
     position: relative;
     right: inherit;
@@ -568,7 +568,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     .message-content{
         width:100%;
     }
-    
+
     .message-img{
         height:40vh;
     }
@@ -576,7 +576,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     .message-content{
     padding:50px 0 0 0;
     }
-    
+
 .message-content h3,
 .message-content p,
 .message-content .message-btn{
@@ -586,29 +586,29 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     height: inherit;
     margin: 0 0 50px 0;
 }
-    
+
 _:-ms-lang(x)::-ms-backdrop, .message-content h3,
 _:-ms-lang(x)::-ms-backdrop, .message-content p,
 _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     width:100%;
 }
-    
+
 .message-content h3{
     text-align: center;
     font-size: 1.2rem;
 
 }
-    
+
 .message-box{
     display: block;
 
 }
-    
+
 .message-box .btn{
     padding: 10px;
     display: block;
 }
-        
+
 }
 
 
@@ -645,11 +645,11 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+
 }
 
 .history-img{
-    background:url("../img/pict_02.jpg") no-repeat center;
+    background:url("pict_02.jpg") no-repeat center;
     background-size: cover;
     height: 50vh;
     width:48%;
@@ -674,14 +674,14 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     .history-content{
         width:100%;
     }
-    
+
     .history-img{
         height:40vh;
     }
 
     .history-content{
     padding:50px 0 0 0;
-    }  
+    }
 }
 
 @media screen and (max-width:430px) {
@@ -714,7 +714,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 }
 
 #footer .footer-r .map-address address{
-     font-style: normal;   
+     font-style: normal;
     margin: 0 0 30px 0;
 }
 
@@ -729,7 +729,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 #footer .footer-r .map-area h2{
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;    
+    writing-mode: vertical-rl;
     text-orientation: upright;
     font-size: 1.3rem;
     width:10%;
@@ -846,40 +846,40 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 }
 
 @media screen and (max-width:1045px) {
- 
+
 #footer .footer-r,
 #footer .footer-l{
     width:100%;
 }
-    
+
 #footer .footer-l .footer-contact,
 #footer #copyright{
     height: inherit;
     padding: 40px 0;
 }
-    
+
 #footer .footer-r .map-area h2{
     width:5%;
 }
-   
+
 #footer .footer-link{
     text-align: center;
 }
-    
+
 }
 
 @media screen and (max-width:768px) {
     #footer .footer-r{
         padding:80px 30px;
     }
-    
+
     #footer .footer-r .map-area{
         margin: 0;
     }
     #footer .footer-link{
         display: none;
     }
-    
+
 #footer .footer-r .map-area h2{
     width:100%;
     height: inherit;
@@ -892,21 +892,21 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 #footer .footer-r .map-address{
         width:48%;
 }
-    
+
 #footer #page-top{
         width:60px;
         height: 60px;
 }
-    
+
 }
 
 @media screen and (max-width:560px) {
 
-#footer .footer-r .map-address,  
+#footer .footer-r .map-address,
 #footer .footer-r .map-block{
         width:100%;
 }
-    
+
 #footer .footer-r .map-address{
         margin: 0 0 50px 0;
 }

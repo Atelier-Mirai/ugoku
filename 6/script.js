@@ -7,15 +7,15 @@
 var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
 		if (windowwidth > 768){
 			var responsiveImage = [//PC用の画像
-				{ src: './img/bg_01.jpg'},
-				{ src: './img/bg_02.jpg'},
-				{ src: './img/bg_03.jpg'}
+				{ src: '6/bg_01.jpg'},
+				{ src: '6/bg_02.jpg'},
+				{ src: '6/bg_03.jpg'}
 			];
 		} else {
 			var responsiveImage = [//タブレットサイズ（768px）以下用の画像
-				{ src: './img/bg_sp01.jpg' },
-				{ src: './img/bg_sp02.jpg' },
-				{ src: './img/bg_sp03.jpg' }
+				{ src: '6/bg_sp01.jpg' },
+				{ src: '6/bg_sp02.jpg' },
+				{ src: '6/bg_sp03.jpg' }
 			];
 		}
 
@@ -54,7 +54,7 @@ $(".btn-view2").modaal({
 /*機能編 6-2-6 サムネイルをクリックするとグループ化された画像一覧を表示する*/
 /*===========================================================*/
 
-//画像をクリックしたら現れる画面の設定	
+//画像をクリックしたら現れる画面の設定
 $(".btn-view").modaal({
 	fullscreen:'true', //フルスクリーンモードにする
 	before_open:function(){// モーダルが開く前に行う動作
@@ -78,7 +78,7 @@ $.scrollify({
 	interstitialSection : "#header",//ヘッダーを認識し、1ページスクロールさせず表示されるように設定
 	easing: "swing", // 他にもlinearやeaseOutExpoといったjQueryのeasing指定可能
     scrollSpeed: 300, // スクロール時の速度
-	
+
 	//以下、ページネーション設定
 	before:function(i,panels) {
       var ref = panels[i].attr("data-section-name");
@@ -110,7 +110,7 @@ $.scrollify({
 // 動きのきっかけの起点となるアニメーションの名前を定義
 function fadeAnime(){
     // 4-6　じわっ（ぼかしから出現）
-	
+
 	$('.blurTrigger').each(function(){ //blurTriggerというクラス名が
 		var elemPos = $(this).offset().top-50;//要素より、50px上の
 		var scroll = $(window).scrollTop();
@@ -120,7 +120,7 @@ function fadeAnime(){
 		}else{
 		$(this).removeClass('blur');// 画面外に出たらblurというクラス名を外す
 		}
-		});	
+		});
 }
 
 /*===========================================================*/
@@ -154,7 +154,7 @@ $(window).scroll(function () {
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load', function () {
-    
+
 /*===========================================================*/
 /*機能編  4-1-3プログレスバー＋数字カウントアップ＋画面が開く*/
 /*===========================================================*/
@@ -167,7 +167,7 @@ var bar = new ProgressBar.Line(splash_text, {//id名を指定
 	color: '#fff',//進捗ゲージのカラー
 	trailWidth: 0.2,//ゲージベースの線の太さ
 	trailColor: '#bbb',//ゲージベースの線のカラー
-	text: {//テキストの形状を直接指定				
+	text: {//テキストの形状を直接指定
 		style: {//天地中央に配置
 			position: 'absolute',
 			left: '50%',
@@ -190,10 +190,10 @@ bar.animate(1.0, function () {//バーを描画する割合を指定します 1.
 	$("#splash_text").fadeOut(10);//フェードアウトでローディングテキストを削除
 	$(".loader_cover-up").addClass("coveranime");//カバーが上に上がるクラス追加
 	$(".loader_cover-down").addClass("coveranime");//カバーが下に下がるクラス追加
-    
-    //=====ここからローディングエリア（splashエリア）をフェードアウトした後に動かしたいJSをまとめる    
+
+    //=====ここからローディングエリア（splashエリア）をフェードアウトした後に動かしたいJSをまとめる
 	$("#splash").fadeOut('slow',function(){//#splashエリアをフェードアウトした後にアニメーションを実行
-        
+
     /* 印象編 8-11テキストが1文字づつ出現*/
 	//spanタグを追加する
 	var element = $(".eachTextAnime");
@@ -216,10 +216,10 @@ bar.animate(1.0, function () {//バーを描画する割合を指定します 1.
 		$(this).html(textbox);
 	});
 
-	EachTextAnimeControl();//印象編 8-11テキストが1文字づつ出現の関数を呼ぶ        
+	EachTextAnimeControl();//印象編 8-11テキストが1文字づつ出現の関数を呼ぶ
     fadeAnime();//印象編 4 最低限おぼえておきたい動きの関数を呼ぶ
-        
+
     }); //=====ここまでローディングエリア（splashエリア）を0.8秒でフェードアウトした後に動かしたいJSをまとめる
     });//=====ここまでプログレスバー表示
-    
+
 });// ここまでページが読み込まれたらすぐに動かしたい場合の記述

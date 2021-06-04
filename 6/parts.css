@@ -68,7 +68,7 @@
     text-decoration: none;
     border:1px solid #fff;
     color: #fff;
-    /*アニメーションの指定*/ 
+    /*アニメーションの指定*/
     transition: all 0.4s ease-out;
 }
 
@@ -87,7 +87,7 @@
     background: linear-gradient(270deg,#3bade3 0%, #9844b7 50%, #44ea76 100%);
     background-size: 200% auto;
     background-position: right center;
-    /*ボックスの影*/   
+    /*ボックスの影*/
     box-shadow: 0 5px 10px rgb(250,108,159,0.4);
 }
 
@@ -179,7 +179,7 @@
 }
 
 /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
- 
+
 .blurTrigger{
     opacity: 0;
 }
@@ -209,7 +209,7 @@
 }
 
 #box1{
-    background:url("../img/bg_02.jpg") no-repeat center;
+    background:url("bg_02.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -217,29 +217,29 @@
  justify-content: flex-start;
 }
 
-@media screen and (max-width:768px) { 
+@media screen and (max-width:768px) {
     #box1.box{
      justify-content: center;
-    } 
+    }
 }
 
 #box2{
-    background:url("../img/bg_03.jpg") no-repeat center;
+    background:url("bg_03.jpg") no-repeat center;
     background-size: cover;
 }
 
 #box3{
-    background:url("../img/bg_04.jpg") no-repeat center;
+    background:url("bg_04.jpg") no-repeat center;
     background-size: cover;
 }
 
 #box4{
-    background:url("../img/bg_05.jpg") no-repeat center;
+    background:url("bg_05.jpg") no-repeat center;
     background-size: cover;
 }
 
 #box5{
-    background:url("../img/bg_06.jpg") no-repeat center;
+    background:url("bg_06.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -298,8 +298,8 @@
 	bottom:0;
 }
 
-@media screen and (max-width:768px) { 
+@media screen and (max-width:768px) {
 	.pagination a .hover-text{
 		display: none;
-	}	
+	}
 }

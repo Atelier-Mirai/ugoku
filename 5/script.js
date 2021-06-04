@@ -45,30 +45,30 @@ $('.scroll-top a').click(function () {
  /*===========================================================*/
 /*機能編  6-1-4 動きを組み合わせて全画面で見せる*/
 /*===========================================================*/
-    
+
 //画像と動画の設定
 var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
 		if (windowwidth > 768){
 			var responsiveImage = [//PC用の動画と画像
-				{ src: './img/main01.jpg',//動画が再生されなかった場合の代替画像
+				{ src: '5/main01.jpg',//動画が再生されなかった場合の代替画像
                  video:{
                      src: [//mp4で動画が再生されない時のことを考えて複数の形式の動画を設定
-                         './video/movie.mp4',
-                         './video/movie.webm',
-                         './video/movie.ogv'
+                         '5/movie.mp4',
+                         '5/movie.webm',
+                         '5/movie.ogv'
                      ],
                      loop: false,//動画を繰り返さない
                      mute: true,//動画の音を鳴らさない
                  }
 				},
-				{src: './img/main02.jpg'},
-				{src: './img/main03.jpg'}
+				{src: '5/main02.jpg'},
+				{src: '5/main03.jpg'}
 			];
 		} else {
             var responsiveImage = [//タブレットサイズ（768px）以下用の画像
-				{ src: './img/main_sp01.jpg' },
-				{ src: './img/main_sp02.jpg' },
-				{ src: './img/main_sp03.jpg' }
+				{ src: '5/main_sp01.jpg' },
+				{ src: '5/main_sp02.jpg' },
+				{ src: '5/main_sp03.jpg' }
 			];
 }
 
@@ -91,7 +91,7 @@ $('#slider').vegas({
 $('[data-fancybox]').fancybox({
  thumbs: {
     autoStart: false, //グループのサムネイル一覧をデフォルトで出す。不必要であればfalseに
-  },	
+  },
 });
 
 /*===========================================================*/
@@ -107,17 +107,17 @@ function delayScrollAnime() {
 		var scroll = $(window).scrollTop();//スクロール値を取得
 		var windowHeight = $(window).height();//画面の高さを取得
 		var childs = $(this).children();	//子要素
-		
+
 		if (scroll >= elemPos - windowHeight && !$(parent).hasClass("play")) {//指定領域内にスクロールが入ったらまた親要素にクラスplayがなければ
 			$(childs).each(function () {
-				
+
 				if (!$(this).hasClass("fadeUp")) {//アニメーションのクラス名が指定されているかどうかをチェック
-					
+
 					$(parent).addClass("play");	//親要素にクラス名playを追加
 					$(this).css("animation-delay", value + "s");//アニメーション遅延のCSS animation-delayを追加し
 					$(this).addClass("fadeUp");//アニメーションのクラス名を追加
 					value = value + time;//delay時間を増加させる
-					
+
 					//全ての処理を終わったらplayを外す
 					var index = $(childs).index(this);
 					if((childs.length-1) == index){
@@ -157,12 +157,12 @@ function TextRandomAnimeControl() {
 //========================================================
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
-$(window).on('load',function(){	
-   
+$(window).on('load',function(){
+
 /*===========================================================*/
 /*機能編  6-2-2 カテゴリ別に画像を並び替える*/
 /*===========================================================*/
-//画面遷移時にギャラリーの画像が被らないように、すべての読み込みが終わった後に実行する 
+//画面遷移時にギャラリーの画像が被らないように、すべての読み込みが終わった後に実行する
 //＝＝＝Muuriギャラリープラグイン設定
     var grid = new Muuri('.grid', {
 
@@ -171,7 +171,7 @@ showDuration: 600,
 showEasing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
 hideDuration: 600,
 hideEasing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
-	
+
 // アイテムの表示/非表示状態のスタイル※オプション。入れなくても動作します
   visibleStyles: {
     opacity: '1',
@@ -180,9 +180,9 @@ hideEasing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
   hiddenStyles: {
     opacity: '0',
     transform: 'scale(0.5)'
-  }    
+  }
 });
-    
+
 //＝＝＝並び替えボタン設定
 $('.sort-btn li').on('click',function(){			//並び替えボタンをクリックしたら
 	$(".sort-btn .active").removeClass("active");	//並び替えボタンに付与されているactiveクラスを全て取り除き
@@ -216,7 +216,7 @@ $('.sort-btn li').on('click',function(){			//並び替えボタンをクリッ�
 		});
         $(this).html(textbox);
 	});
-    
+
 /*===========================================================*/
 /*機能編  4-1-1数字カウントアップ*/
 /*===========================================================*/
@@ -226,7 +226,7 @@ var bar = new ProgressBar.Line(splash_text, {//id名を指定
 	strokeWidth: 0,//進捗ゲージの太さ
 	duration: 1000,//時間指定(1000＝1秒)
 	trailWidth: 0,//線の太さ
-	text: {//テキストの形状を直接指定	
+	text: {//テキストの形状を直接指定
 		style: {//天地中央に配置
 			position:'absolute',
 			left:'50%',
@@ -246,8 +246,8 @@ var bar = new ProgressBar.Line(splash_text, {//id名を指定
 
 //アニメーションスタート
 bar.animate(1.0, function () {//バーを描画する割合を指定します 1.0 なら100%まで描画します
-    
-//=====ここからローディングエリア（splashエリア）を0.8秒でフェードアウトした後に動かしたいJSをまとめる    
+
+//=====ここからローディングエリア（splashエリア）を0.8秒でフェードアウトした後に動かしたいJSをまとめる
 	$("#splash").delay(500).fadeOut(800,function(){//#splashエリアをフェードアウトした後にアニメーションを実行
     PageTopCheck();//機能編 8-1-7 スクロール途中からリンクボタンの形状が変化の関数を呼ぶ
     delayScrollAnime();//印象編 4-12 順番に現れる（CSS x jQuery）の関数を呼ぶ
@@ -255,8 +255,8 @@ bar.animate(1.0, function () {//バーを描画する割合を指定します 1.
     });
 //=====ここまでローディングエリア（splashエリア）を0.8秒でフェードアウトした後に動かしたいJSをまとめる
 
-}); 
-       
+});
+
 });//ここまでページが読み込まれたらすぐに動かしたい場合の記述
 
 // 画面をスクロールをしたら動かしたい場合の記述

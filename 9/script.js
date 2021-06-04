@@ -20,7 +20,7 @@ function ScrollAnime() {
         $('#header').removeClass('DownMove');//#headerにDownMoveというクラス名を除き
 		$('#header').addClass('UpMove');//#headerにUpMoveのクラス名を追加
     }
-    
+
     beforePos = scroll;//現在のスクロール値を比較用のbeforePosに格納
 }
 /*===========================================================*/
@@ -50,7 +50,7 @@ function ScrollTimelineAnime(){
 		var scroll = $(window).scrollTop();// スクロール値取得
 		var windowHeight = $(window).height();// windowの高さ取得
 		var startPoint = 500; //線をスタートさせる位置を指定※レイアウトによって調整してください
-		if (scroll >= elemPos - windowHeight-startPoint){				
+		if (scroll >= elemPos - windowHeight-startPoint){
 			var H = $(this).outerHeight(true)//liの余白と高さを含めた数値を取得
 			//スクロール値から要素までの高さを引いた値を、liの高さの半分のパーセントで出す
 			var percent = (scroll+startPoint - elemPos) / (H/2) *100;//liの余白と高さの半分で線を100％に伸ばす
@@ -63,7 +63,7 @@ function ScrollTimelineAnime(){
 			$(this).children('.border-line').css({
 				height: percent + "%", //CSSでパーセント指定
 			});
-		} 
+		}
 	});
 }
 
@@ -88,15 +88,15 @@ $('#page-top').click(function () {
 var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
 		if (windowwidth > 768){
 			var responsiveImage = [//PC用の画像
-				{ src: './img/main_01.jpg'},
-				{ src: './img/main_02.jpg'},
-				{ src: './img/main_03.jpg'}
+				{ src: '9/main_01.jpg'},
+				{ src: '9/main_02.jpg'},
+				{ src: '9/main_03.jpg'}
 			];
 		} else {
 			var responsiveImage = [//タブレットサイズ（768px）以下用の画像
-				{ src: './img/main_sp01.jpg' },
-				{ src: './img/main_sp02.jpg' },
-				{ src: './img/main_sp03.jpg' }
+				{ src: '9/main_sp01.jpg' },
+				{ src: '9/main_sp02.jpg' },
+				{ src: '9/main_sp03.jpg' }
 			];
 		}
 
@@ -118,8 +118,8 @@ $('#slider').vegas({
 /*===========================================================*/
 
 // 動きのきっかけの起点となるアニメーションの名前を定義
-function moveAnimation(){	
-//スクロールしたらランダムに出現	
+function moveAnimation(){
+//スクロールしたらランダムに出現
 	var randomElm2 = $(".randomScroll");								//親要素取得
 	var randomElm2Child = $(randomElm2).children();					//親の子要素を取得
 	randomScrollAnime();
@@ -141,11 +141,11 @@ function moveAnimation(){
 					randomElm2Child.splice(rnd,1); 							//アニメーション追加となった要素を配列から削除
 				}
 			}
-			
+
 		}else{
 			animeFlag = true;
 		}
-		
+
 	}
 }
 
@@ -158,7 +158,7 @@ function moveAnimation(){
 // 動きのきっかけの起点となるアニメーションの名前を定義
 function fadeAnime(){
     // 4-1 ふわっ（下から）
-    
+
 $('.fadeUpTrigger').each(function(){ //fadeUpTriggerというクラス名が
 		var elemPos = $(this).offset().top-50;//要素より、50px上の
 		var scroll = $(window).scrollTop();
@@ -190,7 +190,7 @@ $('.fadeUpTrigger').each(function(){ //fadeUpTriggerというクラス名が
 		}else{
 		$(this).removeClass('fadeRight');// 画面外に出たらfadeRightというクラス名を外す
 		}
-		});	
+		});
 }
 
 /*===========================================================*/
@@ -208,20 +208,20 @@ $(window).scroll(function () {
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load',function(){
     $("#splash-logo").delay(1200).fadeOut('slow');//ロゴを1.2秒でフェードアウトする記述
-	
+
     //=====ここからローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
-    $("#splash").delay(1500).fadeOut('slow',function(){//ローディングエリア（splashエリア）を1.5秒でフェードアウトする記述    
+    $("#splash").delay(1500).fadeOut('slow',function(){//ローディングエリア（splashエリア）を1.5秒でフェードアウトする記述
         $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
             ScrollTimelineAnime();//機能編 9-1-5 スクロールをするとエリアの高さに合わせて線が伸びる関数を呼ぶ
             ScrollAnime();//機能編 5-1-9スクロール途中でヘッダーが消え、上にスクロールすると復活の関数を呼ぶ
-            moveAnimation();//印象編 4-13 ランダムに現れる（CSS x jQuery）	
+            moveAnimation();//印象編 4-13 ランダムに現れる（CSS x jQuery）
     });
     //=====ここまでローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
-    
+
    //=====ここから背景が伸びた後に動かしたいJSをまとめたい場合は
-    $('.splashbg1').on('animationend', function() {    
+    $('.splashbg1').on('animationend', function() {
         fadeAnime();//印象編 4 最低限おぼえておきたい動きの関数を呼ぶ
     });
     //=====ここまで背景が伸びた後に動かしたいJSをまとめる
-        
+
 });

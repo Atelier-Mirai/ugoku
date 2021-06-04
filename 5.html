@@ -10,11 +10,15 @@
 <link href="https://fonts.googleapis.com/css?family=Italianno%7CMarcellus&amp;display=swap" rel="stylesheet">
 <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
 <!--機能編 6-1-4 動きを組み合わせて全画面で見せる-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css">
+
 <!--機能編 6-2-2 カテゴリ別に画像を並び替える-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- ress: Modern CSS reset -->
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
 <!--自作のCSS-->
-<link rel="stylesheet" href="5/reset.css">
 <link rel="stylesheet" href="5/parts.css">
 <link rel="stylesheet" href="5/layout.css">
 </head>
@@ -22,8 +26,8 @@
 <body>
 <div id="splash">
 	<div id="splash_text"></div>
-</div> 
-    
+</div>
+
 <header id="slider">
 <div class="heading-block">
 <h1 class="TextRandomAnime">Ryoko Kubota</h1>
@@ -33,21 +37,21 @@
 <li><a href="#"><img src="5/svg/ico_insta.svg" alt="Instagram"></a></li>
 <li><a href="#"><img src="5/svg/ico_fb.svg" alt="Facebook"></a></li>
 <li><a href="#"><img src="5/svg/ico_tw.svg" alt="Twitter"></a></li>
-</ul>   
+</ul>
 <!--/slider--></header>
 
 <div class="openbtn"><span></span><span></span><span></span></div>
 <nav id="g-nav">
 <div id="g-nav-list">
 <ul>
-<li><a href="#">Top</a></li>	
-<li><a href="#">About</a></li>	
-<li><a href="#">Service</a></li>	
-<li><a href="#">Contact</a></li>	
+<li><a href="#">Top</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Service</a></li>
+<li><a href="#">Contact</a></li>
 </ul>
 </div>
 </nav>
-    
+
 <div class="wrapper">
 
       <ul id="sort" class="sort-btn">
@@ -56,7 +60,7 @@
         <li class="sort02">Women</li>
         <li class="sort03">Flower</li>
      </ul>
-	
+
 	<ul id="gallery" class="grid delayScroll">
 		<li class="item sort01">
 		<div class="item-content">
@@ -211,30 +215,33 @@
 	</ul>
 
 <!--/wrapper--></div>
-    
+
 	<footer id="footer">
 	<p class="js-scroll scroll-top scroll-view"><a href="#gallery">Scroll</a></p>
 	<p class="js-pagetop scroll-top"><a href="#">Page Top</a></p>
 	<small>&copy; Ryoko Kubota All Rights Reserved.</small>
 	</footer>
 
-<!--=============JS ===============--> 
-<!--jQuery-->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--=============JS ===============-->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <!--機能編 4-1-1数字カウントアップ-->
-<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
-<!--IE11用　不必要なら削除-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"></script>
+
 <!--機能編 6-1-4 動きを組み合わせて全画面で見せる-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js"></script>
+
 <!--機能編 6-2-2 カテゴリ別に画像を並び替える-->
 <!--Muuri-->
-<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
-<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/muuri/0.9.3/muuri.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script>
+
 <!--fancybox-->
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<!--自作のJS-->    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!--自作のJS-->
 <script src="5/script.js"></script>
 </body>
 </html>

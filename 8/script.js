@@ -25,7 +25,7 @@ $('#g-nav a,#footer a').click(function () {
 	var pos = $(elmHash).offset().top;	//idの上部の距離を取得
 	$(elmHash).css("position","sticky");//stickyを有効に戻す
 	$('body,html').animate({scrollTop: pos}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
-	return false; 
+	return false;
 
 });
 
@@ -36,9 +36,9 @@ $('#g-nav a,#footer a').click(function () {
 
 // 動きのきっかけの起点となるアニメーションの名前を定義
 function fadeAnime(){
-    
+
 	// 4-7 にゅーん（滑らかに変形して出現）
-	
+
 	$('.smoothTrigger').each(function(){ //smoothTriggerというクラス名が
 		var elemPos = $(this).offset().top-50;//要素より、50px上の
 		var scroll = $(window).scrollTop();
@@ -48,7 +48,7 @@ function fadeAnime(){
 		}else{
 		$(this).removeClass('smooth');// 画面外に出たらsmoothというクラス名を外す
 		}
-		});	
+		});
 }
 
 
@@ -67,7 +67,7 @@ function SmoothTextAnime() {
 		}else{
 		$(this).removeClass('smoothTextAppear');// 画面外に出たらsmoothTextAppearというクラス名を外す
 		}
-		});	
+		});
 }
 
 /*===========================================================*/
@@ -81,7 +81,7 @@ var unit = 100,
 
 /**
  * Init function.
- * 
+ *
  * Initialize variables and begin the animation.
  */
 function init() {
@@ -92,8 +92,8 @@ function init() {
     // canvas1個めの色指定
     canvasList.push(document.getElementById("waveCanvas"));
     colorList.push(['#fff', '#fff', '#fff', '#fff', '#fff']);//重ねる波線の色設定
-    
-	
+
+
 		// 各キャンバスの初期化
 		for(var canvasIndex in canvasList) {
         var canvas = canvasList[canvasIndex];
@@ -120,7 +120,7 @@ function update() {
 
 /**
  * Draw animation function.
- * 
+ *
  * This function draws one frame of the animation, waits 20ms, and then calls
  * itself again.
  */
@@ -154,8 +154,8 @@ function drawWave(canvas, color, alpha, zoom, delay) {
 
 /**
  * Function to draw sine
- * 
- * The sine curve is drawn in 10px segments starting at the origin. 
+ *
+ * The sine curve is drawn in 10px segments starting at the origin.
  * drawSine(時間, 波の幅のzoom, 波の開始位置の遅れ)
  */
 function drawSine(canvas, t, zoom, delay) {
@@ -214,8 +214,8 @@ function VivusInit(){
 			$("#logo").attr("class", "done");//描画が終わったらdoneというクラスを追加
 		}
 	);
-	logoVivus1.stop();	
-	
+	logoVivus1.stop();
+
 	//2つめのSVG初期設定
 	logoVivus2 = new Vivus('logo2',
 		{
@@ -228,8 +228,8 @@ function VivusInit(){
 			$("#logo2").attr("class", "done");//描画が終わったらdoneというクラスを追加
 		}
 	);
-	logoVivus2.stop();	
-	
+	logoVivus2.stop();
+
 	//3つめのSVG初期設定
 	logoVivus3 = new Vivus('logo3',
 		{
@@ -242,7 +242,7 @@ function VivusInit(){
 		}
 	);
 	logoVivus3.stop();
-	
+
 }
 
 
@@ -255,7 +255,7 @@ function VivusAnime(){
 	if (scroll >= elemPos - windowHeight) {
 		logoVivus1.play(1);//描画される速さ。数が大きくなるほど速い
 	}
-	
+
 	//スクロールをしたら2つめのSVGが出現する設定
 	var elemPos = $('#logo2').offset().top - 50;//要素より、50px上の位置まで来たら出現
 	var scroll = $(window).scrollTop();
@@ -263,7 +263,7 @@ function VivusAnime(){
 	if (scroll >= elemPos - windowHeight) {
 		logoVivus2.play(4);//描画される速さ。数が大きくなるほど速い
 	}
-	
+
 	//スクロールをしたら3つめのSVGが出現する設定
 	var elemPos = $('#logo3').offset().top - 50;//要素より、50px上の位置まで来たら出現
 	var scroll = $(window).scrollTop();
@@ -288,7 +288,7 @@ $(window).scroll(function () {
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load',function(){
     $("#splash-logo").delay(1200).fadeOut('slow');//ロゴを1.2秒でフェードアウトする記述
-	
+
     //=====ここからローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
     $("#splash").delay(1500).fadeOut('slow',function(){//ローディングエリア（splashエリア）を1.5秒でフェードアウトする記述
         $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
@@ -296,13 +296,13 @@ $(window).on('load',function(){
         VivusAnime();//印象編 9-4-1 SVG アニメーションの関数を呼ぶ
     });
     //=====ここまでローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
-    
+
    //=====ここから背景が伸びた後に動かしたいJSをまとめたい場合は
-    $('.splashbg').on('animationend', function() {    
+    $('.splashbg').on('animationend', function() {
     fadeAnime();//印象編 4 最低限おぼえておきたい動きの関数を呼ぶ
 	SmoothTextAnime();//印象編 8-16テキストが滑らかに出現の関数を呼ぶ
     particleTextAnime();//印象編 5-17粒子が集まってテキストになる関数を呼ぶ
     });
-    //=====ここまで背景が伸びた後に動かしたいJSをまとめる    
+    //=====ここまで背景が伸びた後に動かしたいJSをまとめる
 
 });// ここまでページが読み込まれたらすぐに動かしたい場合の記述
