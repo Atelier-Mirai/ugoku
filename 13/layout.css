@@ -2,7 +2,7 @@
 /* レイアウトのためのCSS */
 
 body{
-    background:#f3f3f3 url(../img/bg_washi.png);
+    background:#f3f3f3 url("bg_washi.png");
     background-size:48px 48px;
     font-family: 'Noto Serif JP', serif;
     letter-spacing:0.1em;
@@ -11,7 +11,7 @@ body{
 	line-height:1.85;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%; 
+	-webkit-text-size-adjust: 100%;
 	word-wrap: break-word;
 }
 
@@ -63,11 +63,11 @@ img{
     height: auto;
     padding: 0;
 }
-  
+
 #content-area{
     padding:0;
 }
-    
+
 }
 /* heading */
 .heading-block{
@@ -79,7 +79,7 @@ img{
 #access h2{
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;    
+    writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing:0.2em;
     font-size:2rem;
@@ -113,7 +113,7 @@ img{
 #header h1{
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;    
+    writing-mode: vertical-rl;
     text-orientation: upright;
     font-size: 1rem;
     letter-spacing: 1em;
@@ -131,7 +131,7 @@ img{
 #header p{
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;    
+    writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: 0.3em;
 }
@@ -152,7 +152,7 @@ img{
     height: 90vh;
     align-items: center;
 }
-    
+
 .header-area{
     width:auto;
     height: auto;
@@ -170,14 +170,14 @@ img{
 #header h1 span{
     font-size: 2.3rem;
 }
-    
+
 #header p{
     background:#3e2058;
     padding: 20px 18px 20px 0;
     width: 119px;
     height: 145px;
 }
-    
+
 
  #header .sns-link{
     left: 10px;
@@ -194,7 +194,7 @@ img{
 }
 
 .sns-link li img{
-     width:20px;   
+     width:20px;
 }
 
 /* g-navi */
@@ -281,7 +281,7 @@ img{
 }
 
 #main-nav dl dt{
-     font-size: 0.8rem;   
+     font-size: 0.8rem;
 }
 
 #main-nav dl a{
@@ -296,12 +296,12 @@ img{
 	opacity: 0;
     padding: 10px 0;
 }
-    
+
 #main-nav dl a{
-   font-size: 1.2rem; 
+   font-size: 1.2rem;
 }
 
- 
+
 #main-nav dl.telactive{
     display: block;
     position: fixed;
@@ -320,7 +320,7 @@ img{
     width:90%;
     left:5%;
 }
-    
+
 }
 
 /* lead */
@@ -360,7 +360,7 @@ img{
     padding: 0 0 0 30px;
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;    
+    writing-mode: vertical-rl;
 }
 
 #lead .lead-desc{
@@ -377,14 +377,14 @@ img{
     margin: 0 0 0 30px;
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;    
+    writing-mode: vertical-rl;
 }
 
 #lead .btnarrow5{
-   padding: 20px 15px 40px 15px; 
+   padding: 20px 15px 40px 15px;
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;    
+    writing-mode: vertical-rl;
 }
 
 #lead .btnarrow5::before{
@@ -413,11 +413,11 @@ _:-ms-lang(x), #lead .btnarrow5::after{
     font-size: 1.5rem;
     letter-spacing: 0.4em;
 }
-    
+
 #lead .lead-desc p{
     line-height:2.5;
 }
-    
+
 }
 
 
@@ -427,20 +427,20 @@ _:-ms-lang(x), #lead .btnarrow5::after{
     height:auto;
     padding:100px 0;
     }
-    
+
 #lead .lead-heading{
     width:100%;
     text-align: center;
 }
 
-    
+
 #lead .lead-desc{
     width: 100%;
     padding: 0 30px;
     display: block;
     height: auto;
 }
-    
+
 #lead .lead-desc p{
     width:auto;
     margin: 0 0 30px 0;
@@ -448,7 +448,7 @@ _:-ms-lang(x), #lead .btnarrow5::after{
     -webkit-writing-mode: horizontal-tb;
     writing-mode: horizontal-tb;
 }
- 
+
 #lead .btnarrow5{
     display: block;
     padding: 8px 30px;
@@ -463,7 +463,7 @@ _:-ms-lang(x), #lead .btnarrow5::after{
     top: 152%;
     right: 52%;
 }
-    
+
 }
 
 /* menu */
@@ -475,7 +475,7 @@ _:-ms-lang(x), #lead .btnarrow5::after{
 
 #menu .menu-bg{
     position: relative;
-    background:url(../img/bg_01.jpg) no-repeat center;
+    background:url("bg_01.jpg") no-repeat center;
     background-size:cover;
     background-attachment:fixed;
     width:100%;
@@ -512,22 +512,22 @@ _:-ms-lang(x), #lead .btnarrow5::after{
     align-items:center;
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;    
+    writing-mode: vertical-rl;
     text-orientation: upright;
 }
 
 #menu section:nth-of-type(1) .menu-img-detail{
-    background:url(../img/pict_01.jpg) no-repeat center;
+    background:url("pict_01.jpg") no-repeat center;
     background-size:cover;
 }
 
 #menu section:nth-of-type(2) .menu-img-detail{
-    background:url(../img/pict_02.jpg) no-repeat center;
+    background:url("pict_02.jpg") no-repeat center;
     background-size:cover;
 }
 
 #menu section:nth-of-type(3) .menu-img-detail{
-    background:url(../img/pict_03.jpg) no-repeat center;
+    background:url("pict_03.jpg") no-repeat center;
     background-size:cover;
 }
 
@@ -548,13 +548,13 @@ _:-ms-lang(x), #lead .btnarrow5::after{
 }
 
 @media screen and (max-width:560px) {
-    
+
 #menu .menu-img,
 #menu .menu-content{
     width:100%;
     margin: 0 0 50px 0;
 }
-    
+
 }
 
 /* access */
@@ -564,7 +564,7 @@ _:-ms-lang(x), #lead .btnarrow5::after{
 }
 
 #access .access-bg{
-    background:url(../img/bg_02.jpg) no-repeat center;
+    background:url("bg_02.jpg") no-repeat center;
     background-size:cover;
     background-attachment:fixed;
     width:100%;
@@ -625,7 +625,7 @@ _:-ms-lang(x), #lead .btnarrow5::after{
     #access .access-area .access-block,
     #access .access-map{
         width:100%;
-    }   
+    }
     #access .access-area .access-block{
         padding:40px 20px;
     }
@@ -652,11 +652,11 @@ _:-ms-lang(x), #lead .btnarrow5::after{
 }
 
 #reserve .scrolldown1{
-     top:-10vh;   
+     top:-10vh;
 }
 
 #reserve h2{
-     font-size: 1.2rem;   
+     font-size: 1.2rem;
 }
 
 #reserve .tel{
@@ -665,25 +665,25 @@ _:-ms-lang(x), #lead .btnarrow5::after{
 }
 
 #reserve p br{
-     display: none;   
+     display: none;
 }
 
 @media screen and (max-width:990px) {
 #reserve h2{
-     font-size: 1rem;   
+     font-size: 1rem;
 }
 #reserve .tel{
     font-size: 1.5rem;
 }
-    
+
 }
 
 @media screen and (max-width:540px) {
 
 #reserve p br{
-     display:block;   
+     display:block;
 }
-    
+
 }
 
 /* footer */
@@ -724,15 +724,15 @@ _:-ms-lang(x), #lead .btnarrow5::after{
 
 #footer .footer-link ul li{
     display: inline-block;
-     margin: 0 10px;   
+     margin: 0 10px;
 }
 
 #footer .footer-link a{
-     color:#fff;   
+     color:#fff;
 }
 
 #footer small{
-     color:#ccc;  
+     color:#ccc;
 }
 
 #footer #page-top span{
@@ -757,14 +757,14 @@ _:-ms-lang(x), #lead .btnarrow5::after{
     top:-7px;
     background:#6C6C6C;
     width:1px;
-    height: 20px; 
+    height: 20px;
     transform: rotate(-45deg);
 }
 
 @media screen and (min-width:769px) {
 #footer #page-top a:hover span::before,
 #footer #page-top a:hover span::after{
-     background:#fff;   
+     background:#fff;
 }
 }
 
@@ -776,10 +776,10 @@ _:-ms-lang(x), #lead .btnarrow5::after{
     #footer .footer-logo{
         margin: 0;
     }
-    
+
     #footer .footer-link{
         width:100%;
-        display: block; 
+        display: block;
     }
 
     #footer .footer-link ul{
@@ -787,12 +787,12 @@ _:-ms-lang(x), #lead .btnarrow5::after{
         margin: 50px 0;
         line-height: 3;
     }
-    
+
     #footer small{
          display: block;
         text-align: center;
     }
 
 
-    
+
 }

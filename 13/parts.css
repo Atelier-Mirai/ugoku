@@ -162,7 +162,7 @@ body.appear #container{
     display: none;/*はじめは表示なし*/
     /*ナビの数が増えた場合縦スクロール*/
     position: fixed;
-    z-index: 999; 
+    z-index: 999;
     width: 100%;
     height: 100vh;
     overflow: auto;
@@ -251,7 +251,7 @@ transform: translateY(0);
  }
 
 .openbtn span:nth-of-type(1) {
-	top:13px;	
+	top:13px;
 }
 
 .openbtn span:nth-of-type(2) {
@@ -335,7 +335,7 @@ transform: translateY(0);
 }
 
 /*==================================================
- 機能編 7-1-47	矢印が右に移動して背景がつく 
+ 機能編 7-1-47	矢印が右に移動して背景がつく
 ===================================*/
 
 .btnarrow5{
@@ -478,15 +478,15 @@ transform: translateY(0);
 /*　背景画像設定　*/
 
 .slider-item01 {
-    background:url(../img/main_01.jpg);
+    background:url("main_01.jpg");
 }
 
 .slider-item02 {
-    background:url(../img/main_02.jpg);
+    background:url("main_02.jpg");
 }
 
 .slider-item03 {
-    background:url(../img/main_03.jpg);
+    background:url("main_03.jpg");
 }
 
 .slider-item {
@@ -499,7 +499,7 @@ transform: translateY(0);
 
 /*矢印の設定*/
 
-.slick-prev, 
+.slick-prev,
 .slick-next {
     position: absolute;
 	z-index: 3;
@@ -576,7 +576,7 @@ transform: translateY(0);
 }
 
 /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
- 
+
 .blurTrigger{
     opacity: 0;
 }
@@ -601,7 +601,7 @@ transform: translateY(0);
   }
 
   to {
-    opacity:1;  
+    opacity:1;
 }
 }
 
@@ -636,7 +636,7 @@ transform: translateY(0);
 }
 
 /*右線*/
-.line2::before{ 
+.line2::before{
 	top:0;
 	right:0;
 }
@@ -646,7 +646,7 @@ transform: translateY(0);
 }
 
 /*下線*/
-.lineTrigger::after { 
+.lineTrigger::after {
 	bottom:0;
 	right:0;
 }
@@ -656,7 +656,7 @@ transform: translateY(0);
 }
 
 /*左線*/
-.line2::after{ 
+.line2::after{
 	bottom:0;
 	left:0;
 }
@@ -679,7 +679,7 @@ transform: translateY(0);
 
 .lineTrigger.lineanime .lineinappear{
 	animation: lineInnerAnime .5s linear 1.5s forwards;/*1.5秒後に中央のエリアが0.5秒かけて表示*/
-	opacity: 0;/*初期値を透過0にする*/	
+	opacity: 0;/*初期値を透過0にする*/
 }
 
 @keyframes lineInnerAnime{

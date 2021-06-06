@@ -68,7 +68,7 @@ particlesJS("pt1", {
         "color": "#fff"
       },
       "image": {
-        "src": "img/snow.png",/*画像を指定*/
+        "src": "12/snow.png",/*画像を指定*/
         "width": 120,
         "height": 120
       }
@@ -124,7 +124,7 @@ particlesJS("pt1", {
     }
   },
   "retina_detect": true
-});	
+});
 
 /*雪2*/
 particlesJS("pt2", {
@@ -146,7 +146,7 @@ particlesJS("pt2", {
         "color": "#fff"
       },
       "image": {
-        "src": "img/snow.png",/*画像を指定*/
+        "src": "12/snow.png",/*画像を指定*/
         "width": 120,
         "height": 120
       }
@@ -202,7 +202,7 @@ particlesJS("pt2", {
     }
   },
   "retina_detect": true
-});	
+});
 
 
 /*===========================================================*/
@@ -226,7 +226,7 @@ particlesJS("pt3", {
 				"width":0,
 			},
 			"image":{
-				"src":"img/flower.png",/*画像を指定*/
+				"src":"12/flower.png",/*画像を指定*/
 				"width":190,
 				"height":204
 			}
@@ -303,7 +303,7 @@ particlesJS("pt4", {
 				"width":0,
 			},
 			"image":{
-				"src":"img/flower.png",/*画像を指定*/
+				"src":"12/flower.png",/*画像を指定*/
 				"width":190,
 				"height":204
 			}
@@ -380,7 +380,7 @@ particlesJS("pt5", {
 				"width":0,
 			},
 			"image":{
-				"src":"img/flower.png",/*画像を指定*/
+				"src":"12/flower.png",/*画像を指定*/
 				"width":190,
 				"height":204
 			}
@@ -457,7 +457,7 @@ particlesJS("pt6", {
 				"width":0,
 			},
 			"image":{
-				"src":"img/flower.png",/*画像を指定*/
+				"src":"12/flower.png",/*画像を指定*/
 				"width":190,
 				"height":204
 			}
@@ -532,10 +532,10 @@ $('#wrapper').multiscroll({
     afterLoad: function(anchorLink, index){
 		if(index == 1){
 			TextTypingAnime();
-		}	
+		}
 	}
 
-    
+
 });
 
 /*==================================================
@@ -550,17 +550,17 @@ $(window).scroll(function () {
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load',function(){
-    
+
     //機能編 4-1-5 ロゴアウトラインアニメーション
     $("#splash_logo").delay(3000).fadeOut('slow');//ロゴを3秒（3000ms）待機してからフェードアウト
 
     stroke.play();//SVGアニメーションの実行
-  
-    //=====ここからローディングエリア（splashエリア）をフェードアウトした後に動かしたいJSをまとめる    
+
+    //=====ここからローディングエリア（splashエリア）をフェードアウトした後に動かしたいJSをまとめる
     $("#splash").delay(3000).fadeOut(800,function(){//ローディング画面を3秒（3000ms）待機してからフェードアウト
-    
-    $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与 
-	
+
+    $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
+
     //印象編 8-10テキストがタイピング風に出現
 	var element = $(".TextTyping");
 	element.each(function () {
@@ -578,5 +578,5 @@ $(window).on('load',function(){
 	TextTypingAnime();/* アニメーション用の関数を呼ぶ*/
 
 }); //=====ここまでローディングエリア（splashエリア）を0.8秒でフェードアウトした後に動かしたいJSをまとめる
-    
+
 });// ここまでページが読み込まれたらすぐに動かしたい場合の記述

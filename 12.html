@@ -9,10 +9,14 @@
 <!--=============Google Font ===============-->
 <link href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap" rel="stylesheet">
 <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+
 <!--印象編　6-3　スクロールすると画面分割した左右がそれぞれ動く-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.2/jquery.multiscroll.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.2/jquery.multiscroll.min.css">
+
+<!-- ress: Modern CSS reset -->
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
 <!--自作のCSS-->
-<link rel="stylesheet" href="12/reset.css">
 <link rel="stylesheet" href="12/parts.css">
 <link rel="stylesheet" href="12/layout.css">
 </head>
@@ -63,7 +67,7 @@
 <!--/splash-logo--></div>
 <!--/splash--></div>
 <div class="splashbg"></div><!---画面遷移用-->
-    
+
 <div id="container">
 <header id="header">
 	<nav>
@@ -114,12 +118,12 @@
                 <li><a href="#" target="_blank"><img src="12/ico_tw.svg" alt=""></a></li>
                 <li><a href="#" target="_blank"><img src="12/ico_fb.svg" alt=""></a></li>
             </ul>
-			</div>        
+			</div>
         </section>
 	<!--/ms-left--></div>
-	
+
 	<div class="ms-right">
-        
+
 		<div class="ms-section" id="right1">
         <div class="scrolldown1"><span>Scroll</span></div>
         <div class="particle" id="pt2"></div>
@@ -130,15 +134,15 @@
 
 		<div class="ms-section" id="right3">
 		<!--/right3--></div>
-		
+
 		<div class="ms-section" id="right4">
         <div class="particle" id="pt4"></div>
 		<!--/right4--></div>
-    
+
     	<div class="ms-section" id="right5">
         <div class="particle" id="pt6"></div>
 		<!--/right5--></div>
-				
+
 		<div class="ms-section" id="right6">
 		<!--/right6--></div>
 	<!--/ms-right--></div>
@@ -147,18 +151,22 @@
 <small>&copy; smart fashion</small>
 </footer>
 <!--/container--></div>
-	
-<!--=============JS ===============--> 
-<!--jQuery-->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+
+<!--=============JS ===============-->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <!--機能編 4-1-5　ロゴアウトラインアニメーション-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"></script>
+
 <!--印象編　5-5　雪が降る/5-6　桜が散る-->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
 <!--印象編　6-3　スクロールすると画面分割した左右がそれぞれ動く-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.2/jquery.multiscroll.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-<!--自作のJS-->    
+
+<!--自作のJS-->
 <script src="12/script.js"></script>
 </body>
 </html>

@@ -50,7 +50,7 @@ function PageTopAnime() {
 				$('#page-top').addClass('DownMove');	// DownMoveというクラス名を追加して非表示
 			}
 		}
-		
+
 		var wH = window.innerHeight; //画面の高さを取得
 		var footerPos =  $('#footer').offset().top; //footerの位置を取得
 		if(scroll+wH >= (footerPos+10)) {
@@ -100,9 +100,9 @@ $('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
 
 // 動きのきっかけの起点となるアニメーションの名前を定義
 function fadeAnime(){
- 
+
 	// 4-6 じわっ（ぼかしから出現）
-	
+
 	$('.blurTrigger').each(function(){ //blurTriggerというクラス名が
 		var elemPos = $(this).offset().top-50;//要素より、50px上の
 		var scroll = $(window).scrollTop();
@@ -112,8 +112,8 @@ function fadeAnime(){
 		}else{
 		$(this).removeClass('blur');// 画面外に出たらblurというクラス名を外す
 		}
-		});	
-    
+		});
+
     //4-8 スーッ（枠線が伸びて出現）
 
     $('.lineTrigger').each(function(){ //lineTriggerというクラス名が
@@ -125,8 +125,8 @@ function fadeAnime(){
 		}else{
 			$(this).removeClass('lineanime');// 画面外に出たらlineanimeというクラス名を外す
 		}
-	});	
-    
+	});
+
 }
 
 /*===========================================================*/
@@ -150,8 +150,8 @@ function VivusInit(){
 			$("#logo").attr("class", "done");//描画が終わったらdoneというクラスを追加
 		}
 	);
-	logoVivus1.stop();	
-	
+	logoVivus1.stop();
+
 }
 
 //スクロールをしたらSVGが出現する設定
@@ -178,27 +178,27 @@ $(window).scroll(function () {
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load',function(){
-    
+
     //機能編 4-1-5 ロゴアウトラインアニメーション
     $("#splash_logo").delay(3000).fadeOut('slow');//ロゴを3秒（3000ms）待機してからフェードアウト
 
     stroke.play();//印象編 9-4-1 SVG アニメーションの実行
-  
-    //=====ここからローディングエリア（splashエリア）をフェードアウトした後に動かしたいJSをまとめる    
+
+    //=====ここからローディングエリア（splashエリア）をフェードアウトした後に動かしたいJSをまとめる
     $("#splash").delay(3000).fadeOut(800,function(){//ローディング画面を3秒（3000ms）待機してからフェードアウト
     $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
     PageTopAnime();//機能編 8-1-6 ページの指定の高さを超えたら出現し、フッター手前で止まる関数を呼ぶ
 	VivusInit(); //印象編 9-4-1 SVG アニメーション初期設定
 	VivusAnime();//印象編 9-4-1 SVG アニメーションの関数を呼ぶ
     }); //=====ここまでローディングエリア（splashエリア）を0.8秒でフェードアウトした後に動かしたいJSをまとめる
-    
+
    /*===========================================================*/
     /*機能編 4-2-3	背景色が伸びる（右から左） */
     /*===========================================================*/
 
     //=====ここから背景が伸びた後に動かしたいJSをまとめる
     $('.splashbg').on('animationend', function() {
-      fadeAnime();//印象編 4 最低限おぼえておきたい動きの関数を呼ぶ 
+      fadeAnime();//印象編 4 最低限おぼえておきたい動きの関数を呼ぶ
      });
     //=====ここまで背景が伸びた後に動かしたいJSをまとめる
 });

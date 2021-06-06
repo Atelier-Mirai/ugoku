@@ -218,7 +218,7 @@ body.appear #container{
     padding: 10px 30px;
     text-align: center;
     outline: none;
-    /*アニメーションの指定*/   
+    /*アニメーションの指定*/
     transition: ease .2s;
 }
 
@@ -278,7 +278,7 @@ body.appear #container{
 /*印象編　5-5　雪が降る、5-6　桜が散る*/
 /*===========================================================*/
 
-.particle{ 
+.particle{
 	position:absolute;/*描画固定*/
     left:0;
     top:0;
@@ -329,54 +329,54 @@ body.appear #container{
 
 /*左エリア画像設定*/
 #left1{
-	background:url("../img/main-left.jpg") no-repeat center right;
+	background:url("main-left.jpg") no-repeat center right;
 	background-size:cover;
 }
 
 #right1{
-	background:url("../img/main-right.jpg") no-repeat center left;
+	background:url("main-right.jpg") no-repeat center left;
 	background-size:cover;
 }
 
 #right2{
-	background:url("../img/01.jpg") no-repeat center;
+	background:url("01.jpg") no-repeat center;
 	background-size:cover;
 }
 
 #right3{
-	background:url("../img/02.jpg") no-repeat center;
+	background:url("02.jpg") no-repeat center;
 	background-size:cover;
 }
 
 #right4{
-	background:url("../img/03.jpg") no-repeat center;
+	background:url("03.jpg") no-repeat center;
 	background-size:cover;
 }
 
 #left4{
-	background:url("../img/04.jpg") no-repeat center;
+	background:url("04.jpg") no-repeat center;
 	background-size:cover;
 }
 
 #right5{
-	background:url("../img/05.jpg") no-repeat center;
+	background:url("05.jpg") no-repeat center;
 	background-size:cover;
 }
 
 #left5{
-	background:url("../img/06.jpg") no-repeat center;
+	background:url("06.jpg") no-repeat center;
 	background-size:cover;
 }
 
 #right6{
-	background:url("../img/07.jpg") no-repeat center;
+	background:url("07.jpg") no-repeat center;
 	background-size:cover;
 }
 
 /*＝＝＝＝＝＝＝＝＝＝＝550px以下の見え方＝＝＝＝＝＝＝＝＝＝＝＝＝*/
 
 @media screen and (max-width:550px){
-	
+
 #header{
 	justify-content: center;
 }
@@ -403,50 +403,50 @@ body.appear #container{
 }
 
 /*右エリア上部画像設定*/
-    
+
 #left1{
-    background:url("../img/main-right.jpg") center;
+    background:url("main-right.jpg") center;
     background-size:cover;
 }
 
 #left2 .sp-top{
-	background:url("../img/01.jpg") no-repeat center;
+	background:url("01.jpg") no-repeat center;
 	background-size:cover;
     height: 50vh;
 }
 
 #left3 .sp-top{
-	background:url("../img/02.jpg") no-repeat top center;
+	background:url("02.jpg") no-repeat top center;
 	background-size:cover;
     height: 50vh;
 }
-    
+
 #left4 .sp-top{
-	background:url("../img/03.jpg") no-repeat top center;
+	background:url("03.jpg") no-repeat top center;
 	background-size:cover;
     height: 50vh;
 }
-    
+
 #left4 .sp-bottom{
-	background:url("../img/04.jpg") no-repeat top center;
+	background:url("04.jpg") no-repeat top center;
 	background-size:cover;
     height: 50vh;
 }
 
 #left5 .sp-top{
-	background:url("../img/05.jpg") no-repeat top center;
+	background:url("05.jpg") no-repeat top center;
 	background-size:cover;
     height: 50vh;
 }
-    
+
 #left5 .sp-bottom{
-	background:url("../img/07.jpg") no-repeat center;
+	background:url("07.jpg") no-repeat center;
 	background-size:cover;
     height: 50vh;
 }
 
 #left6{
-	background:url("../img/06.jpg") no-repeat center;
+	background:url("06.jpg") no-repeat center;
 	background-size:cover;
 }
 
@@ -454,6 +454,5 @@ body.appear #container{
 .sp-bottom{
 	padding:20px;
 }
-	
-}
 
+}

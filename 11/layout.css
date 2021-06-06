@@ -9,7 +9,7 @@ body{
 	line-height:1.85;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%; 
+	-webkit-text-size-adjust: 100%;
 	word-wrap: break-word;
 }
 
@@ -72,7 +72,7 @@ html{
 	width:100%;
     padding: 0 30px;
 }
-    
+
 #sub-area{
     margin:0 0 80px 0;
 }
@@ -81,7 +81,7 @@ html{
 
 /* header */
 #header{
-    background:url("../img/bg_header.png") no-repeat top center;
+    background:url("bg_header.png") no-repeat top center;
     background-size: contain;
 }
 
@@ -96,7 +96,7 @@ html{
     max-width:120px;
     padding: 40px 0 0 0;
 }
-    
+
 }
 
 /*modal*/
@@ -114,7 +114,7 @@ html{
 }
 
 #g-nav ul li a:hover{
-     color:#B25938;   
+     color:#B25938;
 }
 
 #g-nav ul li a::after{
@@ -156,7 +156,7 @@ html{
 #newitems h2{
     margin:50px 0;
 }
-    
+
 }
 
 .modaal-container h2{
@@ -188,7 +188,7 @@ html{
 .modaal-container h2 span,
 #ranking h2 span,
 #newitems h2 span{
-    background: url(../img/bg_header_01.png) no-repeat left, url(../img/bg_header_02.png) no-repeat right;
+    background: url(bg_header_01.png) no-repeat left, url(bg_header_02.png) no-repeat right;
     background-size: 35px 35px;
     padding: 10px 60px;
     white-space: nowrap;
@@ -198,7 +198,7 @@ html{
 
 .flower1{
     position: absolute;
-    background:url("../img/bg_flower.png") no-repeat;
+    background:url("bg_flower.png") no-repeat;
     background-size:contain;
     width:140px;
     height: 140px;
@@ -210,7 +210,7 @@ html{
 
 .flower2{
     position: absolute;
-    background:url("../img/bg_flower.png") no-repeat;
+    background:url("bg_flower.png") no-repeat;
     background-size:contain;
     width:100px;
     height: 100px;
@@ -230,8 +230,8 @@ html{
     width:70px;
     height:70px;
 
-}  
-    
+}
+
 }
 
 @media screen and (max-width:768px){
@@ -247,25 +247,25 @@ html{
     top:18%;
     right: 5%;
 }
-    
+
 }
 
 @media screen and (max-width:550px){
 
 .flower1{
     top:14%;
-}   
+}
 
 .flower2{
     top:19%;
     }
-    
+
 }
 
 
 .flower3{
     position: absolute;
-    background:url("../img/bg_flower01.png") no-repeat;
+    background:url("bg_flower01.png") no-repeat;
     background-size:contain;
     width:80px;
     height: 80px;
@@ -276,7 +276,7 @@ html{
 
 .flower4{
     position: absolute;
-    background:url("../img/bg_flower02.png") no-repeat;
+    background:url("bg_flower02.png") no-repeat;
     background-size:contain;
     width:80px;
     height:80px;
@@ -287,7 +287,7 @@ html{
 
 .flower5{
     position: absolute;
-    background:url("../img/bg_flower03.png") no-repeat;
+    background:url("bg_flower03.png") no-repeat;
     background-size:contain;
     width:100px;
     height:100px;
@@ -298,7 +298,7 @@ html{
 
 .flower6{
     position: absolute;
-    background:url("../img/bg_flower04.png") no-repeat;
+    background:url("bg_flower04.png") no-repeat;
     background-size:contain;
     width:80px;
     height:80px;
@@ -309,7 +309,7 @@ html{
 
 .flower7{
     position: absolute;
-    background:url("../img/bg_flower05.png") no-repeat;
+    background:url("bg_flower05.png") no-repeat;
     background-size:contain;
     width:100px;
     height:100px;
@@ -320,7 +320,7 @@ html{
 
 .flower8{
     position: absolute;
-    background:url("../img/bg_flower.png") no-repeat;
+    background:url("bg_flower.png") no-repeat;
     background-size:contain;
     width:85px;
     height:85px;
@@ -374,10 +374,10 @@ html{
 .ranking-list li {
     width: 46%;
 }
-    
+
 .ranking-list li:last-child{
     display: none;
-    }    
+    }
 }
 
 .ranking-list li::before {
@@ -405,7 +405,7 @@ html{
       line-height:2em;
       font-size:1.1rem;
     }
-    
+
 }
 
 .ranking-list li:nth-child(1)::before {
@@ -426,7 +426,7 @@ html{
 }
 
 #newitems .choice-btn li{
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
 span.detail-price{
@@ -465,7 +465,7 @@ span.detail-price{
     text-align: center;
     padding: 0;
 }
-    
+
 }
 
 /* sub-area */
@@ -489,7 +489,7 @@ span.detail-price{
 }
 
 .sub-btn-list li a{
-     color:#fff;  
+     color:#fff;
     display: block;
     border-radius: 10px;
     padding: 20px;
@@ -507,7 +507,7 @@ span.detail-price{
 }
 
 .tab-area .area li a:hover{
-     background:#efefef;   
+     background:#efefef;
 }
 
 
@@ -515,7 +515,7 @@ span.detail-price{
 
 #footer{
     padding:400px 70px 0 70px;
-    background:url("../img/bg_footer.png") no-repeat center top;
+    background:url("bg_footer.png") no-repeat center top;
     background-size: contain;
 }
 
@@ -532,7 +532,7 @@ span.detail-price{
 }
 
 .footer-area a:hover{
-     color:#B25938;   
+     color:#B25938;
 }
 
 .footer-area ul,
@@ -561,9 +561,9 @@ small{
 
 @media screen and (max-width:1090px) {
     #footer{
-     padding: 250px 30px 0 30px;   
+     padding: 250px 30px 0 30px;
     }
-    
+
 .footer-area ul{
     width:30%;
 }
@@ -575,12 +575,12 @@ small{
     margin:50px 0 0 0;
     text-align: center;
     line-height: 2.5;
-    }   
+    }
 }
 
 @media screen and (max-width:810px) {
     #footer{
-     padding: 200px 30px 0 30px;   
+     padding: 200px 30px 0 30px;
     }
 .footer-area ul{
     width:47%;
@@ -598,7 +598,7 @@ small{
 
 @media screen and (max-width:545px) {
     #footer{
-     padding: 150px 30px 0 30px;   
+     padding: 150px 30px 0 30px;
     }
 .footer-area ul,
 .footer-area dl{
@@ -612,4 +612,3 @@ small{
     text-align: center;
 }
 }
-
